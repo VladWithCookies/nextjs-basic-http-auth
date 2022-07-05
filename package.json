@@ -1,14 +1,16 @@
 {
-  "name": "nextjs-http-basic-auth",
+  "name": "nextjs-basic-http-auth",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "express": "^4.18.1",
+    "express-basic-auth": "^1.2.1",
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
